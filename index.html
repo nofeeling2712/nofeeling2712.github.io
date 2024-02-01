@@ -11,9 +11,7 @@
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
+      href="css/bootstrap.min.css"
     />
 
     <title>Cho anh một cốc trà đào</title>
@@ -27,7 +25,7 @@
         <div class="fun-left col-12 col-md-6" style="padding-right: 16px">
           <img
             id="img__left"
-            src="https://img.meta.com.vn/Data/image/2022/06/01/anh-dong-powerpoint-1.gif"
+            src="img/anh-dong-powerpoint-1.gif"
             alt="fun left"
             width="100%"
           />
@@ -66,36 +64,29 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
+      src="js/jquery-3.3.1.slim.min.js"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
+      src="js/popper.min.js"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
+      src="js/bootstrap.min.js"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sweetalert2@11.js"></script>
     <script>
       function getRandomArbitrary(min = 10, max = 80) {
         return parseInt(Math.random() * (max - min) + min);
       }
       let imgs = [
-        "https://lh3.googleusercontent.com/proxy/jXWn5KkX-tkhg0PY0yJv2N2QFGfKH2-pv4iSB9xQ4ankCOydeZwhUvcSjHeLefZzu0A6r8_2fho2u9pSaMOt4RfFrcfjeksqrVWo",
-        "https://img.meta.com.vn/Data/image/2022/06/01/anh-dong-powerpoint-1.gif",
-        "https://i.pinimg.com/originals/12/5b/91/125b91330aa8d0d72bb1b032c153655f.gif",
-        "https://sohanews.sohacdn.com/zoom/700_438/2017/giphy-1500201967926-0-25-226-389-crop-1500201986558.gif",
-        "https://i.pinimg.com/originals/fa/68/fb/fa68fb77c89703a9b1e5862f89242ea1.gif",
-        "https://i.pinimg.com/originals/23/1f/b5/231fb5027639114dd7cf3f8f3ef9cb86.gif",
-        "https://huongdansudung.vn/wp-content/uploads/2023/01/Meme-gif-1.gif",
-        "https://i.pinimg.com/originals/5b/da/fc/5bdafceeec8070ff4be416d21a051ce5.gif",
+        "img/anh-dong-powerpoint-1.gif",
+        "img/125b91330aa8d0d72bb1b032c153655f.gif",
+        "img/giphy-1500201967926-0-25-226-389-crop-1500201986558.gif",
+        "img/fa68fb77c89703a9b1e5862f89242ea1.gif",
+        "img/231fb5027639114dd7cf3f8f3ef9cb86.gif",
+        "img/Meme-gif-1.gif",
+        "img/5bdafceeec8070ff4be416d21a051ce5.gif",
       ];
-      $("#img__left").attr("src", imgs[getRandomArbitrary(0, 7)]);
+      $("#img__left").attr("src", imgs[getRandomArbitrary(0, 6)]);
       $("#btn-no").on("mouseover", function () {
         $("#btn-no").css({
           top: getRandomArbitrary() + "%",
@@ -116,7 +107,7 @@
           title: "<strong>Mình biết mà!</strong>",
           html: `
           <img
-            src="https://i.pinimg.com/originals/88/53/f8/8853f82a27dfff40e3f4c7dfd8906e22.gif"
+            src="img/8853f82a27dfff40e3f4c7dfd8906e22.gif"
             alt="fun left"
             width="100%"
           />
@@ -125,7 +116,7 @@
           showCancelButton: false,
           focusConfirm: false,
         }).then((result) => {
-          $("#img__left").attr("src", imgs[getRandomArbitrary(0, 7)]);
+          $("#img__left").attr("src", imgs[getRandomArbitrary(0, 6)]);
         });
       });
     </script>
