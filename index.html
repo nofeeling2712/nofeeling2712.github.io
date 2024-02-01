@@ -80,13 +80,12 @@
       let imgs = [
         "img/anh-dong-powerpoint-1.gif",
         "img/125b91330aa8d0d72bb1b032c153655f.gif",
-        "img/giphy-1500201967926-0-25-226-389-crop-1500201986558.gif",
         "img/fa68fb77c89703a9b1e5862f89242ea1.gif",
         "img/231fb5027639114dd7cf3f8f3ef9cb86.gif",
         "img/Meme-gif-1.gif",
         "img/5bdafceeec8070ff4be416d21a051ce5.gif",
       ];
-      $("#img__left").attr("src", imgs[getRandomArbitrary(0, 6)]);
+      $("#img__left").attr("src", imgs[getRandomArbitrary(0, 5)]);
       $("#btn-no").on("mouseover", function () {
         $("#btn-no").css({
           top: getRandomArbitrary() + "%",
@@ -116,7 +115,7 @@
           showCancelButton: false,
           focusConfirm: false,
         }).then((result) => {
-          $("#img__left").attr("src", imgs[getRandomArbitrary(0, 6)]);
+          $("#img__left").attr("src", imgs[getRandomArbitrary(0, 5)]);
         });
       });
     </script>
